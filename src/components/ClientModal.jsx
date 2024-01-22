@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const ClientModal = ({ onClose, client, onAddOrUpdate }) => {
   const [formData, setFormData] = useState({
-    id: '',
+    
     name: '',
     phone: '',
     email: '',
@@ -15,7 +15,7 @@ const ClientModal = ({ onClose, client, onAddOrUpdate }) => {
     // If editing an existing client, populate the form with its data
     if (client) {
       setFormData({
-        id: client.id,
+        
         name: client.name,
         phone: client.phone,
         email: client.email,
